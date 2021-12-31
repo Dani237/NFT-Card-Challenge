@@ -51,7 +51,7 @@ body {
     max-width: 40rem;
     padding: 3rem 3rem;
     background-color: var(--dark-blue);
-    border-radius: 1rem;
+    border-radius: 1.4rem;
 }
 
 .images {
