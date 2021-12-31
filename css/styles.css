@@ -71,6 +71,7 @@ body {
     opacity: 0;
     cursor: pointer;
     border-radius: 1rem;
+    transition: all 0.7s ease;
 }
 .view-space:hover {
     background-color: hsl(178, 100%, 50%, 0.6);
@@ -81,6 +82,7 @@ body {
     font-size: 2.7rem;
     cursor: pointer;
     display: inline-block;
+    transition: all 0.7s ease;
 }
 .card-eth-text {
     color: var(--cyan);
@@ -120,6 +122,7 @@ body {
 span {
     color: var(--white);
     cursor: pointer;
+    transition: all 0.7s ease;
 }
 
 
