@@ -1,0 +1,140 @@
+:root {
+    /* Colors */
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    --very-dark-blue: hsl(217, 54%, 11%);
+    --dark-blue: hsl(216, 50%, 16%);
+    --blue: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* Globals */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+img {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+    color: var(--soft-blue);
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--very-dark-blue);
+}
+@media (max-width: 37.5rem) {
+    html {
+        font-size: 55%;
+    }
+    body {
+        padding: 2rem;
+    }
+}
+.padre {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: safe center;
+}
+
+/* CARD */
+
+.card {
+    max-width: 40rem;
+    padding: 3rem 3rem;
+    background-color: var(--dark-blue);
+    border-radius: 1rem;
+}
+
+.images {
+    background-image: url(../images/image-equilibrium.jpg);
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 34rem;
+    background-size: cover;
+    border-radius: 1rem;
+}
+.view-space {
+    width: 100%;
+    height: 34rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+.view-space:hover {
+    background-color: hsl(178, 100%, 50%, 0.6);
+    opacity: 1;
+}
+.card-title {
+    color: var(--white);
+    font-size: 2.7rem;
+    cursor: pointer;
+    display: inline-block;
+}
+.card-eth-text {
+    color: var(--cyan);
+}
+.card-p,
+.card-time-text,
+.creator-text {
+    color: var(--soft-blue);
+}
+
+/* INFO */
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.15rem solid var(--blue);
+}
+.eth, .time {
+    display: flex;
+    gap: 1rem;
+    align-items: safe center;
+}
+
+/* CREATOR */
+
+.creator {
+    display: flex;
+    align-items: safe center;
+    gap: 2rem;
+    margin-top: .5rem;
+}
+.creator-image {
+    width: 3.5rem;
+    border-radius: 50%;
+    border: 0.15rem solid var(--white);
+}
+span {
+    color: var(--white);
+    cursor: pointer;
+}
+
+
+/* ATTRIBUTION */
+
+.attribution {
+    color: var(--white);
+    margin-top: 5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+/* INTERACTION */
+
+span:hover,
+.card-title:hover {
+    color: var(--cyan);
+}
